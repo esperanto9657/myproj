@@ -6,3 +6,6 @@
      steps:
        - checkout
        - run: python -m unittest
+       - run: python setup.py bdist --format=tar
+       - store_artifacts:
+          path: /dist
