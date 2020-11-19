@@ -8,4 +8,4 @@
        - run: python -m unittest
        - run: python setup.py bdist --format=tar
        - store_artifacts:
-          path: /dist
+          path: /dist/abc181d-0.0.1.linux-x86_64.tar
