@@ -1,0 +1,6 @@
+README.md
+setup.py
+abc181d.egg-info/PKG-INFO
+abc181d.egg-info/SOURCES.txt
+abc181d.egg-info/dependency_links.txt
+abc181d.egg-info/top_level.txt
