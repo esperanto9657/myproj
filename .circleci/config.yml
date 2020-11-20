@@ -5,7 +5,11 @@
        - image: circleci/python:3.9.0
      steps:
        - checkout
+       - add_ssh_keys:
+         fingerprints:
+           - "03:7f:0c:e0:c4:f4:03:81:88:44:a6:58:0c:e0:ed:8c"
        - run: python -m unittest
        - run: python setup.py bdist --format=tar
+       - run: sh ./deploy.sh
        - store_artifacts:
           path: /home/circleci/project/dist/abc181d-0.0.1.linux-x86_64.tar
