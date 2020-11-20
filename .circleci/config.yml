@@ -6,8 +6,8 @@
      steps:
        - checkout
        - add_ssh_keys:
-         fingerprints:
-           - "03:7f:0c:e0:c4:f4:03:81:88:44:a6:58:0c:e0:ed:8c"
+           fingerprints:
+             - "03:7f:0c:e0:c4:f4:03:81:88:44:a6:58:0c:e0:ed:8c"
        - run: python -m unittest
        - run: python setup.py bdist --format=tar
        - run: sh ./deploy.sh
